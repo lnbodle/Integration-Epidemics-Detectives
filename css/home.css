@@ -1,0 +1,131 @@
+
+
+
+
+
+@font-face {
+	 font-family: "Roboto";
+	 src: url("../fonts/Roboto-Regular.ttf") format("ttf");
+}
+
+
+body {
+	 margin: 0;
+	 font-family: "Roboto", serif;
+}
+ html, body {
+	 height: 100%;
+}
+ .informations {
+	 background-color: var(--primary-color);;
+}
+ .introduction-content {
+	 display: flex;
+	 flex-wrap: wrap;
+	 justify-content: center;
+}
+ .introduction-content-left {
+	 justify-content: center;
+	 align-items: center;
+	 text-align: center;
+	 flex: 1 50%;
+}
+ .introduction-content-left img {
+	 width: 200px;
+	 height: 200px;
+	 overflow: hidden;
+	 border-radius: 50%;
+	 
+}
+ .introduction-content-right {
+	 display: flex;
+	 flex: 1 50%;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+}
+ .introduction-content-right p {
+	 color: var(--primary-color);
+	 font-size: 12px;
+}
+ .introduction-content-right img {
+	 width: 50%;
+	 
+}
+ .informations-content {
+	 /*padding-left: 10%;
+	 padding-right: 10%;
+	 padding-top: 3%;
+	 padding-bottom: 3%;*/
+}
+ .informations-content-text {
+	 display: flex;
+	 gap: 10px;
+	 color: white;
+}
+ .liste_maladies-container {
+	 display: flex;
+	 justify-content: center;
+	 flex-wrap: wrap-reverse;
+	 flex-direction: row;
+}
+ .liste_maladies-container-map {
+	 display: flex;
+	 flex: 1 50%;
+}
+ .liste_maladies-container-map img {
+	 width: 100%;
+	 height: auto;
+	 border-radius: 25px;
+	 min-width: 400px;
+	 box-shadow: 0px 5px 5px gray;
+}
+ .liste_maladies-container-data {
+	 display: flex;
+	 flex-direction: column;
+	 align-content: space-between;
+	 justify-content: space-between;
+	 align-items: stretch;
+	 flex: 1 50%;
+}
+ .liste_maladies-container-data-grid {
+	 display: grid;
+	 justify-content: stretch;
+	 grid-template-columns: 1fr 1fr;
+}
+ .liste_maladies-container-data-grid-block {
+	 display: flex;
+	 align-items: center;
+	 margin: 10px;
+	 background-color: var(--primary-color);;
+	 border-radius: 15px;
+}
+ .liste_maladies-container-data-grid-block img {
+	 padding: 10%;
+}
+ .liste_maladies-container-data-grid-block p {
+	 color: white;
+}
+ .liste_maladies-container-data-grid-block-number {
+	 font-weight: bold;
+}
+ 
+
+.actualites {
+	background-color: var(--primary-color);
+	text-align: center;
+}
+
+.actualites > h2 {
+	color: white;
+}
+
+section {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+
+	margin-top: 5%;
+	margin-bottom: 5%;
+}

@@ -1,0 +1,78 @@
+
+
+/*-----------------------------------footer---------------------------*/
+
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  flex-wrap: wrap;
+  font-weight: bold;
+
+}
+
+
+.container a {
+  text-decoration: none;
+	color:black;
+	font-family: roboto;
+	font-size: 13px;
+}
+
+
+.container li {
+    list-style:none;
+    background-image:none;
+    background-repeat:none;
+    background-position:0; 
+}
+.logoepidemic {
+  height:  auto;
+  width: 20%;
+}
+
+/*ul {
+  text-decoration: none;
+  list-style-type: none;
+}*/
+
+.divfooter1 {
+  display: block;
+  flex: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.divfooter2 {
+  display: block;
+  flex: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 1;
+}
+
+.divfooter3 {
+  display: block;
+  flex: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 2;
+
+}
+
+.Copyright {
+  text-align: center;
+  font-family: roboto;
+  /*font-size: 30px;*/
+  /*padding: 30px;*/
+}
+
+.hrhr {
+  /*height: 10px;*/
+  background-color: #4CAB9F;
+  border: none;
+  /*margin: 150px;*/
+}

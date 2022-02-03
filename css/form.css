@@ -1,0 +1,38 @@
+.form {
+    border-radius: 25px;
+    border-color: #4cab9f;
+    border: solid 2px #4cab9f;
+    padding: 5% 20% 5% 20%;
+    
+
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+
+.question {
+
+}
+
+.choices {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.select {
+    border-radius: 999999px;
+    flex: 0.5;
+    border: solid 2px #4cab9f;
+  
+    margin: 10px;
+    padding: 3px;
+    text-align: center;
+}
+
+.select .title {
+    font-weight: bold;
+}
+

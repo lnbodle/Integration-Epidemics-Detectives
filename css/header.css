@@ -1,0 +1,299 @@
+*, ::before, ::after {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+.tool_nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #4CAB9F;
+	height: 35px;
+	padding-right: 20px;
+	line-height: 20px;
+	z-index: 1000;
+}
+.tool_nav ul {
+	flex: end;
+}
+
+.tool_nav ul li{
+	float: left;
+	list-style: none;
+	padding: 5px 10px;
+}
+
+.tool_nav a{
+	text-decoration: none;
+	color: white;
+	font-family: roboto;
+	font-size: 13px;
+}
+
+.mobile{
+	display: flex;
+	float: left;
+	width:40px;
+	z-index: 2;
+}
+
+.barre { /* création des barres du menu burger */
+	background-color:#666;
+	height:6px;
+	border-radius:6px;
+	margin:10px 0;
+}
+
+
+.logo2{
+	display: flex;
+}
+.info{
+	display: flex;
+	float: right;
+}
+
+.logosimple{
+	width: 50px;
+}
+
+.profil{
+	width: 15px;
+	margin-right: 10px;
+	color: white;
+}
+select{
+	background-color: transparent;
+ 	border: none;
+}
+#langue{
+	color: white;
+}
+#langue option{
+	color: black;
+}
+
+
+
+
+
+/*----------------------nav--------------------*/
+.logo{
+	margin-top: 5px;
+	width: 150px;
+}
+
+/*a{
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+}*/
+
+nav{
+	background-color: #F6F6F6;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;	
+	align-items: center;	
+	padding: 10px 50px;
+}
+
+.nav-area{
+	list-style: none;	
+	font-weight: bold;
+	font-family: roboto;
+	white-space: nowrap
+}
+.nav-area li{
+	display: inline-block;
+	padding: 0 50px;
+}
+
+nav a{
+	width: 150px;
+	text-decoration: none;
+	color:black;
+	font-family: roboto;
+	font-size: 13px;
+}
+
+
+
+
+/*test menu mob*/
+.active
+{
+	opacity: 0;
+}
+
+
+.div-phone li{
+	margin: 30px;
+	font-size: 40px;
+	font-family: roboto;
+	list-style: none;
+}
+
+.div-phone a{
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+}
+
+.menu-respons
+{
+  background-color: #4CAB9F;
+  width: 80%;
+  height: 100%;
+  opacity: 0;
+  z-index: 50;
+  right: -1000px;
+  transition: 0.3s ease;
+  top: 0;
+}
+
+
+.menu-respons-active
+{
+  opacity: 1;
+  right: 0;
+
+}
+
+.cross	
+{
+	position: absolute;
+    left: 19px;
+    top: 13px;
+    font-size: 60px;
+    opacity: 0;
+}
+
+.cross-active
+{
+  opacity: 1;
+  padding-right: 20px;
+  z-index: 80;
+  color: #666;
+  width: 50px;
+  padding-top: 30px;
+
+}
+
+
+/*----------------------------DESKTOP--------------------------*/
+
+@media (min-width: 992px) {
+	.logo2{	display: none;}	
+	.tool_nav button{display: none;
+	}
+	.tool_nav{
+	justify-content: flex-end;
+	}
+	button{
+	border: none;
+	background: transparent;
+	}
+	.menu-respons > .div-phone > ul{
+	display: none;
+	}
+}
+
+
+/*----------------------------TABLETTE--------------------------*/
+
+
+@media screen and (max-width:992px) { /* première media QUERY adressée aux media de type écran et dont la largeur maximale est de 992px */
+	
+
+	nav ul {
+		display:none; /* on fait disparaitre les conteneurs des menus */
+
+	}
+	nav {
+	background:none;
+	}
+	.tool_nav{
+		background-color:#F6F6F6;
+		height: 80px;
+		padding-right: 0px;
+	}
+	span{
+		display:none;
+	}
+	
+
+	#langue{
+	color: black;
+	}
+
+
+	.mobile{ /* pour faire apparaitre le bouton burger */
+		display:block;
+		margin-left: 20px;
+		width:40px;
+	}
+	.barre { /* création des barres du menu burger */
+		background-color:#666;
+		height:6px;
+		border-radius:6px;
+		margin:10px 0;
+	}
+	.logo{
+		display: none;
+	}
+
+	.profil{
+		width: 25px;
+		margin-right: 0px;
+	}
+
+	
+
+	.menu-respons
+	{
+	  position: fixed;
+
+	}
+
+	.menu-respons > .div-phone > ul {
+		display: block;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+/*----------------------------MOBILE--------------------------*/
+
+
+@media screen and (max-width:480px) { /* dernier point de rupture fixé à 480px de largeur max pour les mobiles "petits" */
+	.logo{ /* on fait disparaitre le logo */
+		display:none;
+	}
+	.mobile{
+		float:inherit; /* on annule l'effet flotant du bouton burger pour le center */
+		margin-left: 20px;
+	}
+	nav {
+		padding-top:10px;
+	}
+	.barre {
+		margin: 0 0 8px 0; /* on modifie et ajuste l'affichage des barres burger */
+	}
+}
+
+	.menu-respons
+{
+  position: fixed;
+
+}
